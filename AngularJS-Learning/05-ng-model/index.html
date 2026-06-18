@@ -1,0 +1,26 @@
+<!-- 05-ng-model Example -->
+<!DOCTYPE html>
+
+<html ng-app="myapp">
+<head>
+    <script src ="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"  ></script>
+    <script src = "app.js"> </script>
+</head>
+<body>
+<div>
+
+    <select ng-model ="city">
+        <option>Select City</option>
+        <option>Delhi</option>
+        <option>Bombay</option>
+        <option>Kolkata</option>
+    </select>
+
+
+</div>
+<h3>
+    You Selected:
+    <span ng-bind="city"></span>
+</h3>
+</body>
+</html>
