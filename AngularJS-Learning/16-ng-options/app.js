@@ -1,2 +1,12 @@
-// 16-ng-options AngularJS example
-var app = angular.module('myApp', []);
+var app = angular.module("myApp", []);
+
+app.controller("myController", function($scope){
+
+    $scope.cities = [
+        "Delhi",
+        "Mumbai",
+        "Kolkata",
+        "Chennai"
+    ];
+
+});

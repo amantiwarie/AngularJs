@@ -1,2 +1,15 @@
-// 27-Focus-Events AngularJS example
-var app = angular.module('myApp', []);
+var app = angular.module("myApp", []);
+
+app.controller("myController", function($scope) {
+
+    $scope.message = "";
+
+    $scope.onFocus = function() {
+        $scope.message = "Input box is focused";
+    };
+
+    $scope.onBlur = function() {
+        $scope.message = "Input box lost focus";
+    };
+
+});

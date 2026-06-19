@@ -1,2 +1,7 @@
-// 14-ng-switch AngularJS example
-var app = angular.module('myApp', []);
+var app = angular.module("myApp", []);
+
+app.controller("myController", function($scope){
+
+    $scope.city = "";
+
+});

@@ -1,3 +1,19 @@
-<!-- 16-ng-options Example -->
 <!DOCTYPE html>
-<html><body><h1>16-ng-options</h1></body></html>
+<html ng-app="myApp">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="app.js"></script>
+</head>
+
+<body ng-controller="myController">
+
+<h1>16 - ng-options</h1>
+
+<select ng-model="selectedCity"
+        ng-options="city for city in cities">
+</select>
+
+<h2>Selected City: {{selectedCity}}</h2>
+
+</body>
+</html>

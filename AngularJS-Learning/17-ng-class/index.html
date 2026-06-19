@@ -1,3 +1,32 @@
-<!-- 17-ng-class Example -->
 <!DOCTYPE html>
-<html><body><h1>17-ng-class</h1></body></html>
+<html ng-app="myApp">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="app.js"></script>
+
+    <style>
+        .red {
+            color: red;
+        }
+
+        .blue {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body ng-controller="myController">
+
+<h1 ng-class="myClass">
+    Hello AngularJS
+</h1>
+<button ng-click="myClass='blue'">
+    Blue
+</button>
+<button ng-click="myClass='red'">
+    change to red
+</button>
+
+
+</body>
+</html>

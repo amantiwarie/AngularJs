@@ -1,2 +1,17 @@
-// 21-Form-Validation AngularJS example
-var app = angular.module('myApp', []);
+var app = angular.module("myApp", []);
+
+app.controller("myController", function($scope){
+
+    $scope.student = {};
+
+    $scope.submitForm = function(){
+
+        alert(
+            "Name: " + $scope.student.name +
+            "\nEmail: " + $scope.student.email +
+            "\nCity: " + $scope.student.city
+        );
+
+    };
+
+});

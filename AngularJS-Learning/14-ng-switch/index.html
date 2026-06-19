@@ -1,3 +1,39 @@
-<!-- 14-ng-switch Example -->
 <!DOCTYPE html>
-<html><body><h1>14-ng-switch</h1></body></html>
+<html ng-app="myApp">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="app.js"></script>
+</head>
+
+<body ng-controller="myController">
+
+<h1>14 - ng-switch</h1>
+
+<select ng-model="city">
+    <option value="Delhi">Delhi</option>
+    <option value="Mumbai">Mumbai</option>
+    <option value="Kolkata">Kolkata</option>
+</select>
+
+<div ng-switch="city">
+
+    <h2 ng-switch-when="Delhi">
+        Welcome to Delhi
+    </h2>
+
+    <h2 ng-switch-when="Mumbai">
+        Welcome to Mumbai
+    </h2>
+
+    <h2 ng-switch-when="Kolkata">
+        Welcome to Kolkata
+    </h2>
+
+    <h2 ng-switch-default>
+        Select a city
+    </h2>
+
+</div>
+
+</body>
+</html>

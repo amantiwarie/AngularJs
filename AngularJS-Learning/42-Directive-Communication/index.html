@@ -1,3 +1,15 @@
-<!-- 42-Directive-Communication Example -->
 <!DOCTYPE html>
-<html><body><h1>42-Directive-Communication</h1></body></html>
+<html ng-app="myApp">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="app.js"></script>
+</head>
+
+<body ng-controller="myController">
+
+<h2>Directive Communication</h2>
+
+<my-directive text="message"></my-directive>
+
+</body>
+</html>

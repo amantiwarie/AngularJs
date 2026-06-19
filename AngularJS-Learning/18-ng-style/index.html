@@ -1,3 +1,32 @@
-<!-- 18-ng-style Example -->
+
+
 <!DOCTYPE html>
-<html><body><h1>18-ng-style</h1></body></html>
+<html ng-app="myApp">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="app.js"></script>
+
+    <style>
+        .red {
+            color: red;
+        }
+
+        .blue {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body ng-controller="myController">
+
+<input type="checkbox" ng-model="big">
+
+<h2 ng-style="{
+    'font-size': big ? '40px' : '20px'
+}">
+    AngularJS
+</h2>
+
+
+</body>
+</html>

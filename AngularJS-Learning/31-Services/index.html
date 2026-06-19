@@ -1,3 +1,23 @@
-<!-- 31-Services Example -->
 <!DOCTYPE html>
-<html><body><h1>31-Services</h1></body></html>
+<html ng-app="myApp">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="app.js"></script>
+</head>
+
+<body ng-controller="myController">
+
+<h2>AngularJS Service Example</h2>
+
+<input type="text"
+       ng-model="name"
+       placeholder="Enter Name">
+
+<button ng-click="showMessage()">
+    Show
+</button>
+
+<p>{{ result }}</p>
+
+</body>
+</html>

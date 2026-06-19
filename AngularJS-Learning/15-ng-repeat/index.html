@@ -1,3 +1,27 @@
-<!-- 15-ng-repeat Example -->
 <!DOCTYPE html>
-<html><body><h1>15-ng-repeat</h1></body></html>
+<html ng-app="myApp">
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="app.js"></script>
+</head>
+
+<body ng-controller="myController">
+
+<h1>15-ng-repeat</h1>
+
+<select ng-model="selectedCity">
+    <option ng-repeat="city in cities" >
+        {{city}}
+    </option>
+</select>
+
+<p>{{selectedCity}}</p>
+
+
+
+
+
+</div>
+
+</body>
+</html>
