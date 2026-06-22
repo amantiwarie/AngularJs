@@ -1,0 +1,27 @@
+<div class="card p-4">
+
+    <h3 class="mb-3">
+        Student List
+    </h3>
+
+    <table class="table table-bordered">
+
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Course</th>
+        </tr>
+
+        <tr ng-repeat="s in students">
+
+            <td>{{s.id}}</td>
+
+            <td>{{s.name}}</td>
+
+            <td>{{s.course}}</td>
+
+        </tr>
+
+    </table>
+
+</div>

@@ -28,7 +28,7 @@ controller:
 .when("/contact",{
 
 templateUrl:
-"contact.html"
+"contacts.html"
 
 })
 
